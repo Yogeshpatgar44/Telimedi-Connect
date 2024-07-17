@@ -3,7 +3,7 @@ Doctor Appointment - Full Stack Appointment Website
 
 About The Project
 
-The DoctorOnCall System facilitates patients in scheduling appointments with preferred doctors or Emergency Appointments set up via an online platform. Developed using the React, Nodejs, it offers a professional website with dynamic functionalities. Key features include dynamic home, Email Notification, Filtering doctors, Setting up appointments and patients/doctors dashboards, secure user login with validation mechanisms, appointment scheduling with access to doctor details, patient appointment management, doctor selection, and overall industries level code splitting followed.
+The Telimedi-Connect System facilitates patients in scheduling appointments with preferred doctors or Emergency Appointments set up via an online platform. Developed using the React, Nodejs, it offers a professional website with dynamic functionalities. Key features include dynamic home, Email Notification, Filtering doctors, Setting up appointments and patients/doctors dashboards, secure user login with validation mechanisms, appointment scheduling with access to doctor details, patient appointment management, doctor selection, and overall industries level code splitting followed.
 
 Features Will You Find Here:
 
