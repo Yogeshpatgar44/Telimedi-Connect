@@ -48,7 +48,7 @@ const AdminAppointments = () => {
 														</div>
 													</td>
 													<td className="text-right">
-														$200.00
+														₹ 200.00
 													</td>
 												</tr>
 											</tbody>
