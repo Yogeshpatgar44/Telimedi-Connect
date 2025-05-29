@@ -11,7 +11,7 @@ const SelectApppointment = ({ selectedDate, handleDateChange, selectTime, setSel
     const pmTimeSlot = doctorTimeSlot.filter((item) => item.includes('PM'));
 
     const last5Days = Array.from({ length: 5 }, (_, index) =>
-        moment().clone().subtract(index, 'days')
+        moment().clone().add(index, 'days')
     )
 
     return (
@@ -20,7 +20,7 @@ const SelectApppointment = ({ selectedDate, handleDateChange, selectTime, setSel
             <dir className="p-3" style={{ background: '#f8f9fa' }}>
                 <div className="row">
                     <div className="col-md-3 col-sm-12 mt-3 info-part border-end">
-                        <p className='py-2 border-bottom info-head-date'>Would you like to schedule an Intervewi? Pick a Date & Time</p>
+                        <p className='py-2 border-bottom info-head-date'>Would you like to schedule an Interview? Pick a Date & Time</p>
                         <div className='icon-box'>
                             <div className='d-flex gap-3'>
                                 <FaBriefcase className='icon' />
@@ -32,7 +32,7 @@ const SelectApppointment = ({ selectedDate, handleDateChange, selectTime, setSel
                             </div>
                             <div className='d-flex gap-3'>
                                 <FaLocationArrow className='icon' />
-                                <p>Sylhet, Bangladesh<br /><span className="form-text">1020BD, Amertam, NorthEast,Srimongol</span></p>
+                                <p>Mangalore, India<br /></p>
                             </div>
                             <div className='d-flex gap-3'>
                                 <FaLink className='icon' />

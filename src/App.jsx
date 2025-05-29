@@ -26,8 +26,6 @@ import SearchDoctor from './components/Doctor/SearchDoctor/SearchDoctor';
 import Blogs from './components/Doctor/Blogs/Blogs';
 import BlogsEdit from './components/Doctor/Blogs/BlogsEdit';
 import AddBlog from './components/Doctor/Blogs/AddBlog';
-import Blog from './components/Blog/Blog';
-import BlogDetails from './components/Blog/BlogDetails';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Service from './components/Service/Service';
@@ -66,8 +64,6 @@ function App() {
         </Route>
         <Route path='/login' element={<SignInForm />} />
         <Route path='/' element={<Home />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/blog/:id' element={<BlogDetails />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />
         <Route path='/service' element={<Service />} />
