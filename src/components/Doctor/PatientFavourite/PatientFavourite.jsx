@@ -62,13 +62,13 @@ const PatientFavouriteDoctor = () => {
                             </div>
                             <ul className="available-info">
                                 <li>
-                                    <FaLocationArrow className='icon' /> Georgia, USA
+                                    <FaLocationArrow className='icon' /> Mangalore, India
                                 </li>
                                 <li>
                                     <FaClock className='icon' /> Available on Fri, 22 Mar
                                 </li>
                                 <li>
-                                    <FaDollarSign className='icon' /> $100 - $400
+                                    <FaDollarSign className='icon' /> $₹ 100 - ₹ 400
                                 </li>
                             </ul>
                             <div className="d-flex justify-content-between mb-3 mt-2">

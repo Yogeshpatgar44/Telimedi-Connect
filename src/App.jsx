@@ -23,9 +23,6 @@ import AdminReviews from './components/Admin/Reviews/Reviews'
 import PatientFavouriteDoctor from './components/Doctor/PatientFavourite/PatientFavourite';
 import DoctorInvoice from './components/Doctor/Invoice/DoctorInvoice';
 import SearchDoctor from './components/Doctor/SearchDoctor/SearchDoctor';
-import Blogs from './components/Doctor/Blogs/Blogs';
-import BlogsEdit from './components/Doctor/Blogs/BlogsEdit';
-import AddBlog from './components/Doctor/Blogs/AddBlog';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Service from './components/Service/Service';
@@ -46,7 +43,6 @@ function App() {
     <Router>
       <Routes>
         <Route element={<PrivateOutlet />}>
-          <Route path='/dashboard/blogs' element={<Blogs />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/dashboard/my-patients' element={<MyPatients />} />
           <Route path='/dashboard/reviews' element={<Reviews />} />
@@ -72,8 +68,6 @@ function App() {
         <Route path='/track-appointment' element={<TrackAppointment />} />
         <Route path='/doctors' element={<SearchDoctor />} />
         <Route path='/doctors/profile/:id' element={<DoctorProfile />} />
-        <Route path='/dashboard/blogs/:id' element={<BlogsEdit />} />
-        <Route path='/dashboard/blogs/create' element={<AddBlog />} />
         <Route path='/booking/:doctorId' element={<DoctorBooking />} />
         <Route path='/booking/success/:id' element={<BookingSuccess />} />
         <Route path='/booking/invoice/:id' element={<BookingInvoice />} />

@@ -8,7 +8,7 @@ const Availibility = () => {
                 <div className="widget-content">
                     <div className="listing-hours">
                         <div className="listing-day current">
-                            <div className="day">Today <span>5 Nov 2019</span></div>
+                            <div className="day">Today <span>5 Feb 2024</span></div>
                             <div className="time-items">
                                 <span className="open-status"><span className="badge bg-success-light">Open Now</span></span>
                                 <span className="time">07:00 AM - 09:00 PM</span>
