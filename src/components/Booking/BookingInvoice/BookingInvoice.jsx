@@ -93,9 +93,9 @@ const BookingInvoice = () => {
                                         <tbody>
                                             <tr>
                                                 <td>General Consultation</td>
-                                                <td className="text-center">${data?.DoctorFee}</td>
-                                                <td className="text-center">${data?.vat}</td>
-                                                <td className="text-right">${data?.totalAmount}</td>
+                                                <td className="text-center">₹ {data?.DoctorFee}</td>
+                                                <td className="text-center">₹ {data?.vat}</td>
+                                                <td className="text-right">₹ {data?.totalAmount}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -107,7 +107,7 @@ const BookingInvoice = () => {
                                         <tbody>
                                             <tr>
                                                 <th>Subtotal:</th>
-                                                <td><span>${data?.totalAmount}</span></td>
+                                                <td><span>₹ {data?.totalAmount}</span></td>
                                             </tr>
                                             <tr>
                                                 <th>Discount:</th>
@@ -115,7 +115,7 @@ const BookingInvoice = () => {
                                             </tr>
                                             <tr>
                                                 <th>Total Amount:</th>
-                                                <td><span>${data?.totalAmount}</span></td>
+                                                <td><span>₹ {data?.totalAmount}</span></td>
                                             </tr>
                                         </tbody>
                                     </table>

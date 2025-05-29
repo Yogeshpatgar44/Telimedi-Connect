@@ -9,7 +9,7 @@ const CheckoutPage = ({ handleChange, selectValue, isCheck, setIsChecked, data, 
         setIsChecked(!isCheck)
     }
 
-    let price = data?.price ? data.price : 60;
+    let price = data?.price ? data.price : 100;
     let doctorImg = data?.img ? data?.img : img
 
     const vat = (15 / 100) * (Number(price))
@@ -76,28 +76,6 @@ const CheckoutPage = ({ handleChange, selectValue, isCheck, setIsChecked, data, 
                             </div>
                         </div>
 
-                        <div className="d-flex gap-2 mt-3 mb-3">
-                            <div>
-                                <input type="radio"
-                                    name="paymentMethod"
-                                    value="paypal"
-                                    onChange={(e) => handleChange(e)}
-                                    checked={paymentMethod === 'paypal'}
-                                />
-                                <span className="checkmark ms-3"></span>
-                                Paypal
-                            </div>
-                            <div>
-                                <input type="radio"
-                                    name="paymentMethod"
-                                    value="payoneer"
-                                    onChange={(e) => handleChange(e)}
-                                    checked={paymentMethod === 'payoneer'}
-                                />
-                                <span className="checkmark ms-3"></span>
-                                Payoneer
-                            </div>
-                        </div>
                         <div className="terms-accept">
                             <div className="custom-checkbox">
                                 <input
@@ -132,15 +110,14 @@ const CheckoutPage = ({ handleChange, selectValue, isCheck, setIsChecked, data, 
                                 <li>Time <span>{selectTime}</span></li>
                             </ul>
                             <ul className="booking-fee">
-                                <li>Consulting Fee <span>${price}</span></li>
-                                <li>Booking Fee <span>$10</span></li>
-                                <li>Vat (Including 15%) <span>$ {vat}</span></li>
+                                <li>Consulting Fee <span>₹ {price}</span></li>
+                                <li>Booking Fee <span>₹ 20</span></li>
                             </ul>
 
                             <ul className="booking-total">
                                 <li className='d-flex justify-content-between'>
                                     <span className='fw-bold'>Total</span>
-                                    <span className="total-cost" style={{ color: '#1977cc' }}>${(Number(price) + 10 + vat)}</span>
+                                    <span className="total-cost" style={{ color: '#1977cc' }}>₹ {(Number(price) + 20 )}</span>
                                 </li>
                             </ul>
                         </div>
